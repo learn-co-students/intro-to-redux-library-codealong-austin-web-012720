@@ -4,7 +4,7 @@ import './App.css';
 
 class App extends Component {
 	handleOnClick = event => {
-		this.props.increaseCount();
+		this.props.dogPoo();
 	};
 
 	render() {
@@ -25,7 +25,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
+		dogPoo: () => dispatch({ type: 'INCREASE_COUNT' })
 	};
 };
 
