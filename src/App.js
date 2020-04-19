@@ -18,12 +18,14 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
+	//console.log('mapStateToProps')
 	return {
 		items: state.items
 	};
 };
 
 const mapDispatchToProps = dispatch => {
+	//console.log('mapDispatchToProps')
 	return {
 		increaseCount: () => dispatch({ type: 'INCREASE_COUNT' })
 	};
